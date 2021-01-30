@@ -5,6 +5,22 @@
     <title>Paper Rock Scissors</title>
 </head>
 <body>
+<h1>Paper Rock Scissors!</h1>
 
+<!--method to be called when button is clicked-->
+<form method="post" th:action="@{/processWinner}">
+
+    <p>Please select a choice User:</p>
+    <input type="radio" name="choice" value="paper" id="paper">
+    <label for="paper">Paper</label><br>
+
+    <input type="radio" name="choice" value="rock" id="rock">
+    <label for="rock">Rock</label><br>
+
+    <input type="radio" name="choice" value="scissors" id="scissors">
+    <label for="scissors">Scissors</label><br>
+
+    <input type="submit" value="Play">
+</form>
 </body>
 </html>
