@@ -73,7 +73,8 @@ public class PaperRock implements Serializable{
             throw new IllegalArgumentException("Illegal computer choice value.");
         }
     }
-    
+
+    //todo fix the names for the choices
     public String getUserChoiceName(){
         return choiceNames[userChoice];
     }

@@ -30,7 +30,7 @@ public class PaperRockScissorsController {
         paperRock.setUserChoice(choice);
 
         //winner is an attribute, an string
-       // String winner = paperRock.getWinnerName();
+       //paperRock.getWinnerName();
 
         //pass the winner into output as a model attribute
 
