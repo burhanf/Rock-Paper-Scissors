@@ -5,6 +5,21 @@
     <title>Paper Rock Scissors</title>
 </head>
 <body>
+<table>
+    <tr><th>User choice</th>
+    <td th:text="${game.getComputerChoiceName()}"></td>
+    </tr>
+
+    <tr><th>PC</th>
+        <td th:text="${game.getComputerChoiceName()}"></td>
+        </tr>
+
+    <tr><th>Winner</th>
+        <td th:text="${game.getWinnerName()}"></td>
+    </tr>
+</table>
+
+<a th:href="@{playAgain}">Play again</a>
 
 </body>
 </html>
