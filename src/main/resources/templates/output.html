@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Paper Rock Scissors</title>
+    <link rel="stylesheet" th:href="@{styles.css}">
 </head>
 <body>
-<table>
-    <tr><th>User choice</th>
-    <td th:text="${game.getUserChoiceName()}"></td>
-    </tr>
+<div class="userText">
+    <h1>User choice</h1>
+    <p th:text="${game.getUserChoiceName()}"></p>
+</div>
 
-    <tr><th>PC</th>
-        <td th:text="${game.getComputerChoiceName()}"></td>
-        </tr>
+<div class="userText">
+    <h1>Computer choice</h1>
+    <p th:text="${game.getComputerChoiceName()}"></p>
+</div>
 
-    <tr><th>Winner</th>
-        <td th:text="${game.getWinnerName()}"></td>
-    </tr>
-</table>
+<div class="userText">
+    <h1>The Winner is</h1>
+    <p th:text="${game.getWinnerName()}"></p><br>
+    <div id="playAgainLink">
+        <a th:href="@{playAgain}" class="userText">Play again</a>
+    </div>
 
-<a th:href="@{playAgain}">Play again</a>
+</div>
 
 </body>
 </html>

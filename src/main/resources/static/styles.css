@@ -7,13 +7,19 @@ body {
     font-family: "Roboto Thin", sans-serif;
 }
 
+a{
+    text-align: center;
+    font-size: 20px;
+    display: inline-block;
+}
+
 h1{
     text-align: center;
     margin: auto;
     border: 3px solid gray;
     width: 60%;
     padding-top: 50px;
-    font-size: 80px;
+    font-size: 60px;
 }
 
 #radioGroup{
@@ -45,4 +51,9 @@ label{
     font-size: 30px;
     background: #444444;
     color: white;
+}
+
+#playAgainLink{
+    text-align: center;
+    margin: auto;
 }
