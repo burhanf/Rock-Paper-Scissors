@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class PaperRockScissorsController {
     //input page
-    @RequestMapping("/")
+    @GetMapping("/")
     public String inputPage(){
 
         return "input";
