@@ -57,3 +57,23 @@ label{
     text-align: center;
     margin: auto;
 }
+
+#paperImage{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 25%;
+}
+#rockImage{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 50%;
+    margin-left: -100px;
+}
+#scissorsImage{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    right: 25%;
+}

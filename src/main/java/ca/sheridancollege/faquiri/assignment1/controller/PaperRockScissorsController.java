@@ -20,7 +20,7 @@ public class PaperRockScissorsController {
     //when button is clicked, call the game and determine winner from PaperRock
     @PostMapping("processWinner")
     //grab user choices
-    public String processWinner(Model model, @RequestParam int choice){
+    public String processWinner(Model model, @RequestParam(defaultValue = "0") int choice){
         //choice = user's choice
 
         //create game
