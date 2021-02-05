@@ -1,10 +1,10 @@
 body {
-    background: gray;
+    background: #ddebeb;
 }
 
 .userText{
-    color: white;
-    font-family: "Roboto Thin", sans-serif;
+    color: black;
+    font-family: sans-serif;
 }
 
 a{
@@ -16,15 +16,15 @@ a{
 h1{
     text-align: center;
     margin: auto;
-    border: 3px solid gray;
-    width: 60%;
-    padding-top: 50px;
+    width: 50%;
+    padding: 30px;
     font-size: 60px;
+    background: #adcfcf;
+    border-radius: 20px;
 }
 
 #radioGroup{
     margin: auto;
-    border: 3px solid gray;
     width: 60%;
     padding: 20px;
 }
@@ -35,12 +35,10 @@ p{
 }
 label{
     font-size: 30px;
-    border: 3px solid gray;
 }
 
 .choices{
     margin: auto;
-    border: 3px solid gray;
     width: 20%;
 }
 
@@ -49,8 +47,9 @@ label{
     margin-top: 50px;
     padding: 15px 30px;
     font-size: 30px;
-    background: #444444;
-    color: white;
+    background: #adcfcf;
+    color: black;
+    border-radius: 25px;
 }
 
 #playAgainLink{
