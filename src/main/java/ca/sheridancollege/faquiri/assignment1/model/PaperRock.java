@@ -5,7 +5,7 @@ package ca.sheridancollege.faquiri.assignment1.model;/*
 import java.io.Serializable;
 
 public class PaperRock implements Serializable{
-    
+
     // choices
     public static final int PAPER = 0, ROCK = 1, SCISSORS = 2;
 
@@ -17,26 +17,24 @@ public class PaperRock implements Serializable{
     // winner
     public static final int COMPUTER = 0, USER = 1, DRAW = 2;
     private String[] winnerNames = {"Computer", "User", "Draw"};
-    
+
     // game logic
-    // the first index is the computer choice, second is user, third is draw as the winner
-    //second index[] is the actual choice thats made, [][1] is paper, [][2] is rock and [][3] is scissors
-    private static final int[][] winnerSelect = 
-    {   
+    private static final int[][] winnerSelect =
+    {
         // computer selected paper
         {
-            DRAW, // user selected paper 
+            DRAW, // user selected paper
             COMPUTER, // user selected rock
             USER // user selected scissors
         },
-        
+
         // computer selected rock
         {
-            USER, // user selected paper 
+            USER, // user selected paper
             DRAW, // user selected rock
             COMPUTER // user selected scissors
         },
-        
+
         // computer selected scissors
         {
             COMPUTER, // user selected paper
@@ -44,7 +42,7 @@ public class PaperRock implements Serializable{
             DRAW // user selected scissors
         }
     };
-    
+
     public PaperRock(){
         computerChoice = (int)(3*Math.random());
     }
@@ -78,34 +76,34 @@ public class PaperRock implements Serializable{
     public String getUserChoiceName(){
         return choiceNames[userChoice];
     }
-    
+
     public String getComputerChoiceName(){
         return choiceNames[computerChoice];
     }
-    
+
     public int getWinner(){
         return winnerSelect[computerChoice][userChoice];
     }
-    
+
     public String getWinnerName(){
         return winnerNames[getWinner()];
     }
-    
+
     public void setComputerName(String computerName){
         winnerNames[COMPUTER] = computerName;
     }
-    
+
     public String getComputerName(){
         return winnerNames[COMPUTER];
     }
-    
+
     public void setUserName(String userName){
         winnerNames[USER] = userName;
     }
-    
+
     public String getUserName(){
         return winnerNames[USER];
     }
-    
+
 }
 

@@ -3,45 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Paper Rock Scissors</title>
-    <!--styles.css uses the one in the grommet-->
     <link rel="stylesheet" th:href="@{css/styles.css}">
 </head>
 <body>
 <h1 class="userText">Paper Rock Scissors!</h1>
 
 <div id="radioGroup">
-<!--method to be called when button is clicked-->
 <form method="post" th:action="@{/processWinner}" class="userText">
-
-    <p>Please select a choice User:</p>
-
-
+    <p>Please select a choice:</p>
     <div class="choices">
-        <input type="radio" name="choice" value="0" id="paper">
+        <input type="radio" name="choice" value="0" id="paper" checked>
         <label for="paper">Paper</label>
     </div>
-
-
     <div class="choices">
         <input type="radio" name="choice" value="1" id="rock">
         <label for="rock">Rock</label>
     </div>
-
-
     <div class="choices">
         <input type="radio" name="choice" value="2" id="scissors">
         <label for="scissors">Scissors</label><br>
     </div>
-
-
     <input type="submit" value="Play" id="button">
 </form>
 </div>
 <img src="images/paper.png" id="paperImage">
 <img src="images/rock.png" id="rockImage">
 <img src="images/scissors.png" id="scissorsImage">
-<!--<img src="images/0.jpeg" id="paperImage">-->
-<!--<img src="images/1.jpeg" id="rockImage">-->
-<!--<img src="images/2.jpeg" id="scissorsImage">-->
 </body>
 </html>

@@ -21,20 +21,18 @@ public class PaperRockScissorsController {
     @PostMapping("processWinner")
     //grab user choices
     public String processWinner(Model model, @RequestParam(defaultValue = "0") int choice){
-        //choice = user's choice
-
         //create game
-        //pass in the choice of the user
-        //determine winner
         PaperRock paperRock = new PaperRock();
+
+        //pass in the choice of the user
         paperRock.setUserChoice(choice);
 
-        //winner is an attribute, an string
+        //todo get winner from here or determine winner in output?
        //paperRock.getWinnerName();
 
         //pass the winner into output as a model attribute
 
-        //pass in the game and get the details from there???
+        //pass in the entire game object to have access to all informtaion
         model.addAttribute("game", paperRock);
 
         //output page
@@ -42,6 +40,7 @@ public class PaperRockScissorsController {
     }
 
     @GetMapping("playAgain")
+    //play again hyper link
     public String reset(){
         return ("redirect:/");
     }
