@@ -53,5 +53,4 @@ public class PaperRockScissorsController {
         gameResults.clear();
         return ("redirect:/");
     }
-
 }

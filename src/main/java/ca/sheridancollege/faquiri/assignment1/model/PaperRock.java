@@ -45,7 +45,7 @@ public class PaperRock implements Serializable{
 
     public PaperRock(){
         computerChoice = (int)(3*Math.random());
-    }
+    } //computer choice generated when object is made
 
     public int getUserChoice() {
         return userChoice;
@@ -86,7 +86,7 @@ public class PaperRock implements Serializable{
 
     public String getWinnerName(){
         return winnerNames[getWinner()];
-    }
+    } //determines the winner
 
     public void setComputerName(String computerName){
         winnerNames[COMPUTER] = computerName;
