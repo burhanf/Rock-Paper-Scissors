@@ -8,17 +8,17 @@
 <body>
 <div class="userText">
     <h1>User choice</h1>
-    <p th:text="${game.getUserChoiceName()}"></p>
+    <p th:text="${gameResults.get('userChoice')}"></p>
 </div>
 
 <div class="userText">
     <h1>Computer choice</h1>
-    <p th:text="${game.getComputerChoiceName()}"></p>
+    <p th:text="${gameResults.get('computerChoice')}"></p>
 </div>
 
 <div class="userText">
     <h1>The winner is...</h1>
-    <p th:text="${game.getWinnerName()}"></p><br>
+    <p th:text="${gameResults.get('winnerName')}"></p><br>
     <div id="playAgainLink">
         <a th:href="@{playAgain}" class="userText">Play again</a>
     </div>

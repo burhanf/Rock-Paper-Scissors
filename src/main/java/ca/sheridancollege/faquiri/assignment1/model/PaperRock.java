@@ -72,7 +72,6 @@ public class PaperRock implements Serializable{
         }
     }
 
-    //todo fix the names for the choices
     public String getUserChoiceName(){
         return choiceNames[userChoice];
     }

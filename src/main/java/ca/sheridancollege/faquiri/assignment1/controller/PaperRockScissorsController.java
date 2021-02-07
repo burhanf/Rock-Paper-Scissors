@@ -5,11 +5,16 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.HashMap;
+import java.util.Map;
 
 @Controller
 public class PaperRockScissorsController {
+    //dictionary to store results which will be added to the model
+    Map<String, String> gameResults = new HashMap<String, String>();
+
     //input page
     @GetMapping("/")
     public String inputPage(){
@@ -27,13 +32,15 @@ public class PaperRockScissorsController {
         //pass in the choice of the user
         paperRock.setUserChoice(choice);
 
-        //todo get winner from here or determine winner in output?
-       //paperRock.getWinnerName();
+        //add game information to dictionary
+        gameResults.put("userChoice", paperRock.getUserChoiceName());
+        gameResults.put("computerChoice", paperRock.getComputerChoiceName());
 
-        //pass the winner into output as a model attribute
+        //determine the winner
+        gameResults.put("winnerName", paperRock.getWinnerName());
 
-        //pass in the entire game object to have access to all informtaion
-        model.addAttribute("game", paperRock);
+        //add the results of the game to the model
+        model.addAttribute("gameResults", gameResults);
 
         //output page
         return "output";
@@ -42,6 +49,8 @@ public class PaperRockScissorsController {
     @GetMapping("playAgain")
     //play again hyper link
     public String reset(){
+        //clear dictionary
+        gameResults.clear();
         return ("redirect:/");
     }
 
