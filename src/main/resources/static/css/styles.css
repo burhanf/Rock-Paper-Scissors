@@ -17,8 +17,8 @@ h1{
     text-align: center;
     margin: auto;
     width: 50%;
-    padding: 30px;
-    font-size: 60px;
+    padding: 20px;
+    font-size: 50px;
     background: #adcfcf;
     border-radius: 20px;
 }
@@ -31,10 +31,13 @@ h1{
 
 p{
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
 }
 label{
-    font-size: 30px;
+    font-size: 28px;
+    position: relative;
+    left: 18%;
+    margin: 4px;
 }
 
 .choices{
@@ -42,9 +45,10 @@ label{
     width: 20%;
 }
 
+
 #button{
     margin-left: 45%;
-    margin-top: 50px;
+    margin-top: 30px;
     padding: 15px 30px;
     font-size: 30px;
     background: #adcfcf;
@@ -58,18 +62,22 @@ label{
 }
 
 img{
-    position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 140px;
+    height: 140px;
+    background: #adcfcf;
+    padding: 5px;
+    border-radius: 20px;
+    position: relative;
+    left: 18%;
 }
 
-#paperImage{
-    left: 25%;
-}
-#rockImage{
-    left: 50%;
-    margin-left: -100px;
-}
-#scissorsImage{
-    right: 25%;
-}
+/*#paperImage{*/
+/*    left: 25%;*/
+/*}*/
+/*#rockImage{*/
+/*    left: 50%;*/
+/*    margin-left: -100px;*/
+/*}*/
+/*#scissorsImage{*/
+/*    right: 25%;*/
+/*}*/
