@@ -17,8 +17,8 @@ h1{
     text-align: center;
     margin: auto;
     width: 50%;
-    padding: 20px;
-    font-size: 50px;
+    padding: 10px;
+    font-size: 30px;
     background: #adcfcf;
     border-radius: 20px;
 }
@@ -26,13 +26,14 @@ h1{
 #radioGroup{
     margin: auto;
     width: 60%;
-    padding: 20px;
+    padding: 15px;
 }
 
 p{
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
 }
+
 label{
     font-size: 28px;
     position: relative;
@@ -50,7 +51,7 @@ label{
     margin-left: 45%;
     margin-top: 30px;
     padding: 15px 30px;
-    font-size: 30px;
+    font-size: 25px;
     background: #adcfcf;
     color: black;
     border-radius: 25px;
@@ -62,22 +63,16 @@ label{
 }
 
 img{
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
     background: #adcfcf;
-    padding: 5px;
+    padding: 3px;
     border-radius: 20px;
     position: relative;
     left: 18%;
 }
 
-/*#paperImage{*/
-/*    left: 25%;*/
-/*}*/
-/*#rockImage{*/
-/*    left: 50%;*/
-/*    margin-left: -100px;*/
-/*}*/
-/*#scissorsImage{*/
-/*    right: 25%;*/
-/*}*/
+.outputImages{
+    left: 46%;
+    margin-bottom: 15px;
+}

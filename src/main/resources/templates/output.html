@@ -9,16 +9,19 @@
 <div class="userText">
     <h1>User choice</h1>
     <p th:text="${gameResults.get('userChoice')}"></p>
+    <img th:src="'images/' + ${gameResults.get('userChoice')} + '.png'" class="outputImages">
 </div>
 
 <div class="userText">
     <h1>Computer choice</h1>
     <p th:text="${gameResults.get('computerChoice')}"></p>
+    <img th:src="'images/' + ${gameResults.get('computerChoice')} + '.png'" class="outputImages">
 </div>
 
 <div class="userText">
     <h1>The winner is...</h1>
     <p th:text="${gameResults.get('winnerName')}"></p><br>
+    <img th:src="'images/' + ${gameResults.get('winnerName')} + '.png'" class="outputImages">
     <div id="playAgainLink">
         <a th:href="@{playAgain}" class="userText">Play again</a>
     </div>
